@@ -237,7 +237,7 @@ textarea{
     box-shadow: none;
     resize: none;
     border: transparent;
-    spellcheck="false";
+   
 }
 body{
     background: black;
@@ -252,7 +252,7 @@ canvas{
 }
 </style>
 </head>
-<body onload = "printText('>> Hi. Ok, its second part. In the end you should send me one word. Ok?')">
+<body  spellcheck="false" onload = "printText('>> Hi. Ok, its second part. In the end you should send me one word. Ok?')">
     <canvas id="c"></canvas>
     <textarea id='terminal' onkeydown="checker(event)" onmousedown="nomouse(event)"></textarea>
 </body>
